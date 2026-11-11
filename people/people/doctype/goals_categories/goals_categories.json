@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "PFGG.YY.MM.DD.######",
+ "creation": "2026-10-16 15:37:50.114329",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "evaluation_category",
+  "weight",
+  "goals_sets"
+ ],
+ "fields": [
+  {
+   "fieldname": "evaluation_category",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Evaluation Category",
+   "options": "Employee Goals\nOrganization Goals\nClassification Goals\nGrade Goals\nLocation Goals",
+   "width": "200"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "weight",
+   "fieldtype": "Percent",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Weight",
+   "non_negative": 1,
+   "width": "60"
+  },
+  {
+   "fieldname": "goals_sets",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Goals Sets",
+   "link_filters": "[[\"Evaluation Categorise Sets\",\"classification\",\"=\",\"Goals\"]]",
+   "options": "Evaluation Categorise Sets"
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "link_display_mode": "Search",
+ "links": [],
+ "modified": "2026-10-23 21:33:53.394710",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Goals Categories",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

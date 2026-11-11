@@ -1,0 +1,256 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "PFGO.YY.MM.DD.######",
+ "creation": "2026-10-09 01:14:06.223510",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "goal_info_section",
+  "goal_info_column",
+  "cycle",
+  "evaluation_category",
+  "column_break_ptig",
+  "emp_id",
+  "emp_name",
+  "employee_job",
+  "emp_organization",
+  "column_break_tkqy",
+  "amended_from",
+  "image",
+  "section_break_oawl",
+  "column_break_hjut",
+  "goal",
+  "weight",
+  "score",
+  "start_date",
+  "due_date",
+  "status",
+  "column_break_rlzn",
+  "section_break_qwja",
+  "goal_details_column",
+  "goals_kpis_records"
+ ],
+ "fields": [
+  {
+   "fieldname": "goal",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "label": "Goal"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "emp_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee ID",
+   "options": "Employees"
+  },
+  {
+   "fieldname": "cycle",
+   "fieldtype": "Link",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Evaluation Cycle",
+   "options": "Evaluation Cycles"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Percent",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "label": "Weight",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "goals_kpis_records",
+   "fieldtype": "Table",
+   "in_import_template": 1,
+   "label": "KPIs",
+   "options": "Goals KPIs items"
+  },
+  {
+   "fetch_from": "emp_id.preferred_name",
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "options": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Goals",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ptig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Pending\nWithdrawn\nApproved\nRejected\nSubmitted"
+  },
+  {
+   "fieldname": "goal_info_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "goal_details_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "goal_info_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qwja",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fetch_from": "emp_id.image",
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image",
+   "make_attachment_public": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tkqy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "emp_id.organization",
+   "fieldname": "emp_organization",
+   "fieldtype": "Link",
+   "label": "Employee Organization",
+   "options": "Organizations",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "emp_id.job",
+   "fieldname": "employee_job",
+   "fieldtype": "Link",
+   "label": "Employee Job",
+   "options": "Jobs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "evaluation_category",
+   "fieldtype": "Autocomplete",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Evaluation Category",
+   "options": "Employee Goals\nOrganization Goals\nClassification Goals\nGrade Goals\nLocation Goals"
+  },
+  {
+   "fieldname": "section_break_oawl",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "column_break_rlzn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hjut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Percent",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "label": "Score",
+   "non_negative": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "is_submittable": 1,
+ "link_display_mode": "Search",
+ "links": [],
+ "modified": "2026-10-24 22:06:37.637929",
+ "modified_by": "Administrator",
+ "module": "Performance",
+ "name": "Goals",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_goal_setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Direct Manager",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "emp_id",
+ "track_changes": 1,
+ "track_views": 1,
+ "translated_doctype": 1
+}

@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "PFGS.YY.MM.DD.######",
+ "creation": "2026-10-16 16:05:53.789048",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tqnh",
+  "competency_set",
+  "calculation_method",
+  "column_break_eluj",
+  "section_break_dtgx",
+  "item_factor_scale",
+  "column_break_aqes",
+  "category_factor_scale"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tqnh",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "competency_set",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Goals set"
+  },
+  {
+   "fieldname": "calculation_method",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Calculation Method ",
+   "options": "Weight \u00d7 Score\nWeight \u00d7 Factor\nWeight \u00d7 Factor \u00d7 Score"
+  },
+  {
+   "fieldname": "column_break_eluj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dtgx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_aqes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_factor_scale",
+   "fieldtype": "Table",
+   "label": "Goal Items Calculation",
+   "options": "Score Factor Scale"
+  },
+  {
+   "fieldname": "category_factor_scale",
+   "fieldtype": "Table",
+   "label": "Goal Categorise Calculation",
+   "options": "Score Factor Scale"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2026-10-18 22:47:42.830279",
+ "modified_by": "Administrator",
+ "module": "Performance",
+ "name": "Goal Sets",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "competency_set",
+ "translated_doctype": 1
+}

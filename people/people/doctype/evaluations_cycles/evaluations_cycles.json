@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:evaluation_cycle",
+ "creation": "2026-09-30 15:05:42.123741",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "evaluation_cycle",
+  "status",
+  "evaluations_mapping"
+ ],
+ "fields": [
+  {
+   "fieldname": "evaluation_cycle",
+   "fieldtype": "Data",
+   "label": "Evaluation Cycle",
+   "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Autocomplete",
+   "label": "Status"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "evaluations_mapping",
+   "fieldtype": "Table",
+   "in_import_template": 1,
+   "options": "Evaluations Mapping"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2026-10-13 10:43:30.059372",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Evaluations Cycles",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "translated_doctype": 1
+}

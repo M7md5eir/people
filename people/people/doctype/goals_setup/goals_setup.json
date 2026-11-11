@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:goal",
+ "creation": "2026-10-01 23:22:13.566811",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "goal",
+  "description",
+  "column_break_pcyj",
+  "kpis_mapping"
+ ],
+ "fields": [
+  {
+   "fieldname": "goal",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "label": "Goal",
+   "unique": 1
+  },
+  {
+   "fieldname": "kpis_mapping",
+   "fieldtype": "Table MultiSelect",
+   "in_import_template": 1,
+   "label": "KPIs Mapping",
+   "options": "KPIs Mapping"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_pcyj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2026-10-01 23:34:47.344526",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Goals Setup",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "translated_doctype": 1
+}

@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "EVGB.YY.MM.DD.######",
+ "creation": "2026-10-01 16:01:20.106776",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "weight"
+ ],
+ "fields": [
+   {
+    "allow_on_submit": 1,
+    "fieldname": "weight",
+   "fieldtype": "Percent",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Weight",
+   "non_negative": 1,
+   "width": "75"
+  },
+   {
+    "allow_on_submit": 1,
+    "fieldname": "category",
+   "fieldtype": "Link",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Organizations Levels",
+   "width": "325"
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-03 02:23:48.148722",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Goals Parts Breakdowns",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

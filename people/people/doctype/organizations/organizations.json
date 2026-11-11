@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:organization",
+ "creation": "2026-09-28 22:03:28.771492",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fk1r",
+  "organization",
+  "parent_organizations",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "organization_level"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fk1r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Group",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "Organizations"
+  },
+  {
+   "fieldname": "parent_organizations",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Parent",
+   "options": "Organizations"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "label": "Organization",
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "organization_level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Organization Level",
+   "options": "Organizations Levels"
+  }
+ ],
+ "grid_page_length": 50,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2026-10-09 19:59:32.246723",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Organizations",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_organizations",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Employee"
+  },
+  {
+   "read": 1,
+   "role": "Direct Manager"
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1,
+ "translated_doctype": 1
+}

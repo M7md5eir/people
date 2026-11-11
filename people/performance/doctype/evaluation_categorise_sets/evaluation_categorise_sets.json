@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "PFCS.YY.MM.DD.######",
+ "creation": "2026-10-16 01:40:17.187174",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tqnh",
+  "category_set",
+  "classification",
+  "score_formula",
+  "column_break_eluj",
+  "competency_sets_items",
+  "section_break_dtgx",
+  "items_calculation",
+  "column_break_aqes",
+  "categorise_calculation"
+ ],
+ "fields": [
+  {
+   "fieldname": "category_set",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category Set"
+  },
+  {
+   "fieldname": "column_break_eluj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "competency_sets_items",
+   "fieldtype": "Table",
+   "label": "Competencies",
+   "options": "Competency Sets Items"
+  },
+  {
+   "fieldname": "section_break_dtgx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items_calculation",
+   "fieldtype": "Table",
+   "label": "Items Calculation",
+   "options": "Score Factor Scale"
+  },
+  {
+   "fieldname": "column_break_aqes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "categorise_calculation",
+   "fieldtype": "Table",
+   "label": "Categorise Calculation",
+   "options": "Score Factor Scale"
+  },
+  {
+   "fieldname": "section_break_tqnh",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "score_formula",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Score Formula",
+   "placeholder": "use field name for example: score_factor * min (rating , 1.25)"
+  },
+  {
+   "fieldname": "classification",
+   "fieldtype": "Autocomplete",
+   "label": "Classification",
+   "options": "Goals\nCompetencies"
+  }
+ ],
+ "grid_page_length": 50,
+ "link_display_mode": "Search",
+ "links": [],
+ "modified": "2026-10-23 19:28:00.060386",
+ "modified_by": "Administrator",
+ "module": "Performance",
+ "name": "Evaluation Categorise Sets",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "category_set",
+ "translated_doctype": 1
+}

@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "PFEC.YY.MM.DD.######",
+ "creation": "2026-10-15 21:28:30.002996",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_odaj",
+  "evaluation_cycle",
+  "status",
+  "column_break_xmwr",
+  "evaluation_rates",
+  "section_break_edba",
+  "forms_assignment"
+ ],
+ "fields": [
+  {
+   "fieldname": "evaluation_cycle",
+   "fieldtype": "Data",
+   "label": "Evaluation Cycle",
+   "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Autocomplete",
+   "label": "Status"
+  },
+  {
+   "fieldname": "evaluation_rates",
+   "fieldtype": "Table",
+   "label": "Evaluation Rates",
+   "options": "Evaluation Rates"
+  },
+  {
+   "fieldname": "forms_assignment",
+   "fieldtype": "Table",
+   "options": "Evaluation Cycles Participants"
+  },
+  {
+   "fieldname": "section_break_odaj",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "column_break_xmwr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_edba",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2026-10-17 02:37:46.244329",
+ "modified_by": "Administrator",
+ "module": "Performance",
+ "name": "Evaluation Cycles",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "role": "Employee",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "evaluation_cycle",
+ "translated_doctype": 1
+}

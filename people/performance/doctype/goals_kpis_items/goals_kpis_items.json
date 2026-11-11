@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "PFKR.YY.MM.DD.######",
+ "creation": "2026-10-10 02:37:42.544860",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kpi",
+  "uom",
+  "reverse",
+  "weight",
+  "planned",
+  "achieved",
+  "score_factor",
+  "score"
+ ],
+ "fields": [
+  {
+   "fieldname": "kpi",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "KPI",
+   "options": "KPIs",
+   "width": "300"
+  },
+  {
+   "fetch_from": "kpi.uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1,
+   "width": "60"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Percent",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Weight",
+   "non_negative": 1,
+   "precision": "2",
+   "width": "60"
+  },
+  {
+   "fieldname": "planned",
+   "fieldtype": "Float",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Planned",
+   "precision": "2",
+   "width": "60"
+  },
+  {
+   "default": "0",
+   "fetch_from": "kpi.reverse_calc",
+   "fieldname": "reverse",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reverse",
+   "read_only": 1,
+   "width": "60"
+  },
+  {
+   "fieldname": "achieved",
+   "fieldtype": "Float",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Achieved",
+   "precision": "2",
+   "width": "60"
+  },
+  {
+   "fieldname": "score_factor",
+   "fieldtype": "Float",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Score Factor",
+   "precision": "2",
+   "read_only": 1,
+   "width": "60"
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Float",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Score",
+   "precision": "2",
+   "read_only": 1,
+   "width": "60"
+  }
+ ],
+ "grid_page_length": 25,
+ "istable": 1,
+ "link_display_mode": "Search",
+ "links": [],
+ "modified": "2026-10-23 21:24:59.338171",
+ "modified_by": "Administrator",
+ "module": "Performance",
+ "name": "Goals KPIs items",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

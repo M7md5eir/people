@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "PFGE.YY.MM.DD.######",
+ "creation": "2026-10-09 03:30:06.471063",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cgqj",
+  "evaluation_cycle",
+  "emp_id",
+  "goals_evaluation_records",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cgqj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Goals Evaluation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "emp_id",
+   "fieldtype": "Link",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "ID",
+   "options": "Employees"
+  },
+  {
+   "fieldname": "goals_evaluation_records",
+   "fieldtype": "Table",
+   "options": "Goals Evaluation items"
+  },
+  {
+   "fieldname": "evaluation_cycle",
+   "fieldtype": "Link",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Evaluation Cycle",
+   "options": "Evaluations Cycles"
+  }
+ ],
+ "grid_page_length": 50,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-16 02:11:51.381363",
+ "modified_by": "Administrator",
+ "module": "Performance",
+ "name": "Goals Evaluation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

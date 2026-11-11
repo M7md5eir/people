@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "EVGD.YY.MM.DD.######",
+ "creation": "2026-10-03 02:27:50.393373",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "weight",
+  "weight_breakdown",
+  "calculation",
+  "overachievement",
+  "calculation_method",
+  "goals_calc_individual",
+  "goals_calc",
+  "goals_parts_breakdowns"
+ ],
+ "fields": [
+  {
+   "fieldname": "weight",
+   "fieldtype": "Percent",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Weight",
+   "non_negative": 1,
+   "width": "60"
+  },
+  {
+   "fieldname": "calculation",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Calculation",
+   "width": "105"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "goals_calc_individual",
+   "fieldtype": "Table",
+   "label": "Goals Calc Individual",
+   "options": "Evaluations Calculations"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "goals_calc",
+   "fieldtype": "Table",
+   "label": "Goals Calc",
+   "options": "Evaluations Calculations"
+  },
+  {
+   "fieldname": "weight_breakdown",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Weight Breakdown",
+   "width": "175"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "description": "calculate actual achievement above the top slice",
+   "fieldname": "overachievement",
+   "fieldtype": "Check",
+   "in_import_template": 1,
+   "label": "Overachievement"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "goals_parts_breakdowns",
+   "fieldtype": "Table",
+   "label": "Goals Parts Breakdowns",
+   "options": "Goals Parts Breakdowns"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Autocomplete",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Employee Goals\nOrganization Goals\nLocation Goals\nClassification Goals\nGrade Goals",
+   "width": "225"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "calculation_method",
+   "fieldtype": "Autocomplete",
+   "in_import_template": 1,
+   "label": "Calculation Method",
+   "options": "Weight \u00d7 Score\nWeight \u00d7 Factor\nWeight \u00d7 Factor \u00d7 Score"
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-06 20:31:27.100539",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Goals Distribution",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

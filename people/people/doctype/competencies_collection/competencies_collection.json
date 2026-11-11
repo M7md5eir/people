@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "EVCC.YY.MM.DD.######",
+ "creation": "2026-10-07 08:50:51.429569",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "weight",
+  "details",
+  "category_score",
+  "factor",
+  "score"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Autocomplete",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Self Evaluation\nManagers Evaluation\nSubordinates Evaluation\nPeers Evaluation\nCustomers Evaluation"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Details"
+  },
+  {
+   "fieldname": "category_score",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "factor",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Factor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Score",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-07 09:42:27.245153",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Competencies Collection",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

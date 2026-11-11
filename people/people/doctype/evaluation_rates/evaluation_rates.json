@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "PFER.YY.MM.DD.######",
+ "creation": "2026-10-14 23:07:00.676666",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rate",
+  "min_score",
+  "color",
+  "quota"
+ ],
+ "fields": [
+  {
+   "fieldname": "rate",
+   "fieldtype": "Autocomplete",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Rate",
+   "not_nullable": 1,
+   "options": "Unsatisfactory\nBelow Expectation\nMeet Expectation\nExceed Expectation\nOutstanding"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Color",
+   "not_nullable": 1
+  },
+  {
+   "fieldname": "min_score",
+   "fieldtype": "Percent",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Min Score",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "quota",
+   "fieldtype": "Percent",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Quota",
+   "non_negative": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-17 02:28:53.846380",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Evaluation Rates",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

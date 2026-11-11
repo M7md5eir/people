@@ -1,0 +1,292 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "PFCO.YY.MM.DD.######",
+ "creation": "2026-10-13 23:19:46.179904",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_iwht",
+  "evaluation_cycle",
+  "evaluation_category",
+  "status",
+  "score_factor",
+  "employee_info_column",
+  "emp_id",
+  "emp_name",
+  "employee_job",
+  "organization",
+  "image",
+  "column_break_mydf",
+  "evaluator_id",
+  "evaluator_name",
+  "evaluator_job",
+  "evaluator_organization",
+  "section_break_bcsn",
+  "column_break_ohbf",
+  "competencies_records",
+  "section_break_fcys",
+  "amended_from",
+  "column_break_zgpo",
+  "column_break_lkgt",
+  "score"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Autocomplete",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Pending\nSubmitted"
+  },
+  {
+   "fieldname": "emp_id",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_standard_filter": 1,
+   "label": "Employee ID",
+   "options": "Employees",
+   "permlevel": 1
+  },
+  {
+   "fetch_from": "emp_id.preferred_name",
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "options": "Name",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "emp_id.organization",
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Employee Organization",
+   "options": "Organizations",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "emp_id.image",
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image",
+   "make_attachment_public": 1,
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Competencies",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "competencies_records",
+   "fieldtype": "Table",
+   "options": "Competencies Records"
+  },
+  {
+   "fieldname": "evaluation_cycle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Evaluation Cycle",
+   "options": "Evaluation Cycles",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "employee_info_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "evaluator_id",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Evaluator ID",
+   "options": "Employees",
+   "permlevel": 2
+  },
+  {
+   "fetch_from": "evaluator_id.preferred_name",
+   "fieldname": "evaluator_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Evaluator Name",
+   "options": "Name",
+   "permlevel": 2,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "evaluator_id.organization",
+   "fieldname": "evaluator_organization",
+   "fieldtype": "Link",
+   "label": "Evaluator Organization",
+   "options": "Organizations",
+   "permlevel": 2,
+   "read_only": 1
+  },
+  {
+   "fieldname": "evaluation_category",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Evaluation Category",
+   "options": "Self Evaluation\nManagers Evaluation\nSubordinates Evaluation\nPeers Evaluation",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_mydf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bcsn",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "column_break_ohbf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_iwht",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "score_factor",
+   "fieldtype": "Percent",
+   "label": "Score Factor",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lkgt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fcys",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "column_break_zgpo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "emp_id.job",
+   "fieldname": "employee_job",
+   "fieldtype": "Link",
+   "label": "Employee Job",
+   "options": "Jobs",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "evaluator_id.job",
+   "fieldname": "evaluator_job",
+   "fieldtype": "Link",
+   "label": "Evaluator Job",
+   "options": "Jobs",
+   "permlevel": 2,
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "image",
+ "is_submittable": 1,
+ "link_display_mode": "Search",
+ "links": [],
+ "modified": "2026-10-23 20:54:53.394233",
+ "modified_by": "Administrator",
+ "module": "Performance",
+ "name": "Competencies",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_goal_setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 2,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee"
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "emp_id",
+ "track_changes": 1,
+ "track_views": 1,
+ "translated_doctype": 1
+}

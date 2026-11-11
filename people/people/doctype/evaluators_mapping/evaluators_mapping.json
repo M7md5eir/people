@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "EVLM.YY.MM.DD.######",
+ "creation": "2026-09-30 19:50:03.166005",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "evl_id",
+  "evl_name",
+  "evl_position",
+  "evl_job",
+  "category"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Autocomplete",
+   "label": "Category",
+   "options": "Self Evaluation\nManagers Evaluation\nSubordinates Evaluation\nPeers Evaluation\nCustomers Evaluation"
+  },
+  {
+   "fieldname": "evl_id",
+   "fieldtype": "Link",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "ID",
+   "options": "Employees"
+  },
+  {
+   "fetch_from": "evl_id.preferred_name",
+   "fieldname": "evl_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "evl_id.position",
+   "fieldname": "evl_position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Position",
+   "options": "Positions",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "evl_id.job",
+   "fieldname": "evl_job",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job",
+   "options": "Jobs",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-05 20:33:53.729182",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Evaluators Mapping",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

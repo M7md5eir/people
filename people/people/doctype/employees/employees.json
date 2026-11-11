@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:emp_id",
+ "creation": "2026-09-29 09:12:59.993663",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_information_section",
+  "emp_id",
+  "full_name",
+  "preferred_name",
+  "column_break_hutl",
+  "1st_name",
+  "2nd_name",
+  "3rd_name",
+  "4th_name",
+  "column_break_fnax",
+  "image",
+  "birth_date",
+  "gender",
+  "religion",
+  "nationality",
+  "section_break_denm",
+  "join_date",
+  "position",
+  "job",
+  "classification",
+  "column_break_afgv",
+  "organization",
+  "location",
+  "column_break_wupz",
+  "user"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "emp_id",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "label": "ID",
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "1st_name",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "label": "1st Name",
+   "options": "Name",
+   "translatable": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "2nd_name",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "label": "2nd Name",
+   "options": "Name",
+   "translatable": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "3rd_name",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "label": "3rd Name",
+   "options": "Name",
+   "translatable": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "4th_name",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "label": "4th Name",
+   "options": "Name",
+   "translatable": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "preferred_name",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Preferred Name",
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "in_import_template": 1,
+   "label": "Birth Date"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Position",
+   "options": "Positions"
+  },
+  {
+   "fetch_from": "position.job",
+   "fieldname": "job",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job",
+   "options": "Jobs",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "position.classification",
+   "fieldname": "classification",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Classification",
+   "options": "Classifications",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "position.organizations",
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Organization",
+   "options": "Organizations",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "join_date",
+   "fieldtype": "Date",
+   "in_import_template": 1,
+   "label": "Join Date"
+  },
+  {
+   "fieldname": "column_break_hutl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fnax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_denm",
+   "fieldtype": "Section Break",
+   "label": "Job Information"
+  },
+  {
+   "fieldname": "column_break_afgv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wupz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location",
+   "options": "Locations"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Link",
+   "label": "Religion",
+   "options": "Religions"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Nationalities"
+  },
+  {
+   "fieldname": "personal_information_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "image",
+ "links": [],
+ "modified": "2026-10-12 21:59:23.793290",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Employees",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Employee"
+  },
+  {
+   "read": 1,
+   "role": "Direct Manager"
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "emp_id",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "preferred_name",
+ "track_changes": 1,
+ "track_views": 1,
+ "translated_doctype": 1
+}

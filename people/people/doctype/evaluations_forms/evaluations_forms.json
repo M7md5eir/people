@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:evaluation_form",
+ "creation": "2026-10-04 21:39:56.396694",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rsvt",
+  "evaluation_form",
+  "evaluations_rates",
+  "column_break_fhdn",
+  "amended_from",
+  "section_break_oslp",
+  "goals_column",
+  "goals_weight",
+  "goals_distribution",
+  "competencies_column",
+  "competencies_weight",
+  "competencies_distribution"
+ ],
+ "fields": [
+  {
+   "fieldname": "competencies_distribution",
+   "fieldtype": "Table",
+   "in_import_template": 1,
+   "label": "Competencies Distribution",
+   "options": "Competencies Distribution"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "goals_distribution",
+   "fieldtype": "Table",
+   "in_import_template": 1,
+   "label": "Goals Distribution",
+   "options": "Goals Distribution"
+  },
+  {
+   "fieldname": "column_break_fhdn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_oslp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_rsvt",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "goals_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "competencies_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "goals_weight",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Goals Weight"
+  },
+  {
+   "fieldname": "competencies_weight",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Competencies Weight"
+  },
+  {
+   "fieldname": "evaluations_rates",
+   "fieldtype": "Table",
+   "in_import_template": 1,
+   "label": "Rates",
+   "options": "Evaluations Rates"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Evaluations Forms",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "evaluation_form",
+   "fieldtype": "Data",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Evaluation Form",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-07 20:14:22.518731",
+ "modified_by": "Administrator",
+ "module": "People",
+ "name": "Evaluations Forms",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "translated_doctype": 1
+}

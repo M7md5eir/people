@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "PFCR.YY.MM.DD.######",
+ "creation": "2026-10-13 23:31:53.788916",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "competency",
+  "weight",
+  "required",
+  "rating",
+  "gap",
+  "score_factor",
+  "score"
+ ],
+ "fields": [
+  {
+   "fieldname": "competency",
+   "fieldtype": "Link",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Competency",
+   "options": "Competency Definitions",
+   "permlevel": 1,
+   "width": "350"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Weight",
+   "permlevel": 1,
+   "precision": "2",
+   "read_only": 1,
+   "width": "60"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Rating",
+   "options": "5",
+   "width": "75"
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Score",
+   "precision": "2",
+   "read_only": 1,
+   "width": "60"
+  },
+  {
+   "fieldname": "score_factor",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Score Factor",
+   "precision": "2",
+   "read_only": 1,
+   "width": "60"
+  },
+  {
+   "fieldname": "required",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Required",
+   "options": "5",
+   "width": "75"
+  },
+  {
+   "fieldname": "gap",
+   "fieldtype": "Float",
+   "in_import_template": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Gap",
+   "precision": "2",
+   "read_only": 1,
+   "width": "60"
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "link_display_mode": "Search",
+ "links": [],
+ "modified": "2026-10-24 23:03:26.042395",
+ "modified_by": "Administrator",
+ "module": "Performance",
+ "name": "Competencies Records",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
